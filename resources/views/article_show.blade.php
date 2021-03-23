@@ -7,6 +7,7 @@
     
         <h1>{{$article->name}}</h1>
         <small>{{$article->created_at}}</small>
+        <div>creado por {{$article->user->name}}</div>
         <hr>
 
         {{$article->content}}

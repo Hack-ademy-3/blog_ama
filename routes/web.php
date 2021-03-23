@@ -19,3 +19,5 @@ Route::get('/', [FrontController::class, 'home'])->name('home');
 Route::get('/articles/create', [ArticleController::class, 'create'])->name('articles.create');
 Route::post('/articles/create', [ArticleController::class, 'make'])->name('articles.make');
 Route::get('/articles/{id}', [ArticleController::class, 'show'])->where('id', '[0-9]+')->name('articles.show');
+Route::get('/users/{id}', [FrontController::class, 'userDetail'])->where('id', '[0-9]+')->name('user_detail');
+
