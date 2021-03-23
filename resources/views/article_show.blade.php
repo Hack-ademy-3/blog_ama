@@ -8,9 +8,13 @@
         <h1>{{$article->name}}</h1>
         <small>{{$article->created_at}}</small>
         <div>creado por {{$article->user->name}}</div>
+        @foreach($article->tags as $tag)
+        <a href="#" class="btn btn-outline-primary">{{$tag->name}}</a>
+        @endforeach
         <hr>
 
-        {{$article->content}}
+        {!!$article->content!!}
+        
 
 
 

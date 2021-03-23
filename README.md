@@ -2,3 +2,9 @@
     - Contenido hompage (nav,articulos,footer)
 - Formulario de creación de artículos
 - Creación de usuarios y zona de registro 
+- Relacion 1 a N entre usuario y articulo
+- Relacion N a N entre un articula y tag o etiquetas
+    - Crear toda la infraestructura de la entidad Tag,
+    - Crear la relacion entre Articulos y Tag,
+        - Una migración, para crear la tabla pivot,
+        - Crear las relaciones en los dos modelos. (belongsToMany),

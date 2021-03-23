@@ -18,7 +18,6 @@
             <strong class="d-inline-block mb-2 text-primary">World</strong>
             <h3 class="mb-0">{{$article->name}}</h3>
             <div class="mb-1 text-muted">{{$article->created_at}} by <a href="{{route('user_detail', ['id'=>$article->user->id])}}">{{$article->user->name}}</a></div>
-            <p class="card-text mb-auto">{{$article->content}}</p>
             <a href="{{route('articles.show', ['id'=>$article->id])}}">Continue reading</a>
           </div>
           
