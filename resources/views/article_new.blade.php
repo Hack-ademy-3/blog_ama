@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="row">
-
+  <div class="col-12">
     <form action='{{route('articles.make')}}' method='POST'>
         @csrf
         <div class="mb-3">
@@ -18,6 +18,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Crear</button>
       </form>
+  </div>
 </div>
 
 @endsection
