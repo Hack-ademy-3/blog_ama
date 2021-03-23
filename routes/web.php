@@ -18,4 +18,4 @@ use App\Http\Controllers\ArticleController;
 Route::get('/', [FrontController::class, 'home'])->name('home');
 Route::get('/articles/create', [ArticleController::class, 'create'])->name('articles.create');
 Route::post('/articles/create', [ArticleController::class, 'make'])->name('articles.make');
-Route::get('/articles/{id}'), [ArticleController::class, 'show'])->where('id', '[0-9]+')->name('articles.show');
+Route::get('/articles/{id}', [ArticleController::class, 'show'])->where('id', '[0-9]+')->name('articles.show');
